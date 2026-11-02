@@ -29,7 +29,7 @@ if __name__ == "__main__":
         choice=int(input("Enter your choice: "))
 
         if choice==1:
-            networkManager.networkIinfo()
+            networkManager.networkInfo()
         elif choice==2:
             networkManager.connectionMonitor()
         elif choice==3:
