@@ -29,9 +29,23 @@ if __name__ == "__main__":
         choice=int(input("Enter your choice: "))
 
         if choice==1:
-            networkManager.network_info()
+            networkManager.networkIinfo()
         elif choice==2:
-            networkManager.connection_info()
+            networkManager.connectionMonitor()
+        elif choice==3:
+            firewallManager.firewallStatus()
+        elif choice==4:
+            firewallManager.manage_firewallRules()
+        elif choice==5:
+            firewallManager.view_firewallRules()
+        elif choice==0:
+            exit()
+        else:
+            print("Invalid Input")
+
+
+    
+            
             
 
 
