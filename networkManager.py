@@ -189,9 +189,15 @@ def routingTable():
 
     print(output.stdout)
 
+# Connectionn Monitor
+
 
 def connectionMonitor():
-    print("\n")
+
+    print("==============================")
+    print("     Connection Monitor")
+    print("==============================")
+    print("\n\n")
     output=subprocess.run(
         "ss -tunap",
         shell=True,
