@@ -190,3 +190,17 @@ def routingTable():
     print(output.stdout)
 
 
+def connectionMonitor():
+    print("\n")
+    output=subprocess.run(
+        "ss -tunap",
+        shell=True,
+        capture_output=True,
+        text=True
+    )
+
+    if output.returncode!=0:
+        print("Unexpected error occured")
+        return
+
+    print(output.stdout)
