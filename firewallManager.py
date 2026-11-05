@@ -198,7 +198,7 @@ def reset():
     print("\n")
 
     output=subprocess.run(
-        "sudo ufw reset",
+        "sudo ufw --force reset",
         shell=True,
         capture_output=True,
         text=True
